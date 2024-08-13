@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My School Organizer</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#reminders">Reminders</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#links">Useful Links</a></li>
+            <li><a href="#files">Files</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="reminders">
+            <h2>Reminders</h2>
+            <ul id="reminder-list"></ul>
+            <input type="text" id="reminder-input" placeholder="Add a new reminder">
+            <button onclick="addReminder()">Add Reminder</button>
+        </section>
+
+        <section id="notes">
+            <h2>Notes</h2>
+            <textarea id="notes-input" placeholder="Write your notes here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <p id="saved-note"></p>
+        </section>
+
+        <section id="links">
+            <h2>Useful Links</h2>
+            <ul id="links-list"></ul>
+            <input type="text" id="link-input" placeholder="Add a new link">
+            <button onclick="addLink()">Add Link</button>
+        </section>
+
+        <section id="files">
+            <h2>Files</h2>
+            <input type="file" id="file-input">
+            <ul id="files-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My School Organizer</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
